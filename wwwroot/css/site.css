@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+
 html {
   font-size: 14px;
+  font-family: jetbrains mono, sans-serif;
+  background-color: azure;
 }
 
 @media (min-width: 768px) {

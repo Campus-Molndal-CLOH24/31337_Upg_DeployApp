@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31337_Upg_DeployApp", "31337_Upg_DeployApp.csproj", "{89709F01-138D-0384-9E73-549E2E791ADF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89709F01-138D-0384-9E73-549E2E791ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89709F01-138D-0384-9E73-549E2E791ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89709F01-138D-0384-9E73-549E2E791ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89709F01-138D-0384-9E73-549E2E791ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD64ACD1-6C3B-44E3-B5A5-78F405FBECB7}
+	EndGlobalSection
+EndGlobal

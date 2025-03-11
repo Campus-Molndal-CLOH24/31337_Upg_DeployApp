@@ -11,9 +11,9 @@ runcmd:
   # - apt-get install -y aspnetcore-runtime-8.0
 
     - add-apt-repository ppa:dotnet/backports -y
-    - apt update
+    - apt-get update
     # Installera .NET Core 9.0 runtime.
-    - apt install -y aspnetcore-runtime-9.0
+    - apt-get install -y aspnetcore-runtime-9.0
 
 # Create a service for the application
 write_files:

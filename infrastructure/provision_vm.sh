@@ -7,7 +7,7 @@ vm_port=5000
 az group create --location northeurope --name $resource_group
 
 az vm create --name $vm_name --resource-group $resource_group \
-             --image Ubuntu2402 --size Standard_B1s \
+             --image Ubuntu2204 --size Standard_B1s \
              --generate-ssh-keys --admin-username azureuser \
              --custom-data @cloud-init_dotnet.yaml
 

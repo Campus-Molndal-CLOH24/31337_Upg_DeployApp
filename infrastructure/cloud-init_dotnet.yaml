@@ -1,11 +1,12 @@
-#cloud-config
+# cloud-config
 
-# Install .Net Runtime 8.0
+# Install .NET Runtime 9.0 (or any other required version)
 runcmd:
-  # Register Microsoft repository (which includes .Net Runtime 9.0 package)
-    - add-apt-repository ppa:dotnet/backports -y
-    - apt-get update
-    - apt-get install -y aspnetcore-runtime-9.0
+  # Register the Microsoft repository and install .NET Runtime 9.0
+  - wget https://packages.microsoft.com/config/ubuntu/22.04/prod.list -O /etc/apt/sources.list.d/microsoft-prod.list
+  - sudo apt-key adv --keyserver packages.microsoft.com --recv-keys EB3E94ADBE1229CF
+  - sudo apt-get update
+  - sudo apt-get install -y dotnet-runtime-9.0
 
 # Create a service for the application
 write_files:
@@ -24,7 +25,7 @@ write_files:
       User=www-data
       Environment=ASPNETCORE_ENVIRONMENT=Production
       Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
-      Environment="ASPNETCORE_URLS=http://*:5000"
+      Environment="ASPNETCORE_URLS=http://0.0.0.0:5000"
 
       [Install]
       WantedBy=multi-user.target

@@ -2,7 +2,7 @@
 
 html {
   font-size: 14px;
-  font-family: jetbrains mono, sans-serif;
+  font-family: jetbrains mono, sans-serif !important;
   background-color: azure;
 }
 

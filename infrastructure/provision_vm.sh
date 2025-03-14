@@ -14,5 +14,5 @@ az vm create --name $vm_name --resource-group $resource_group \
 az vm open-port --port $vm_port --resource-group $resource_group --name $vm_name
 
 # Print the VM IP address
-# vm_ip=$(az vm show --show-details --name $vm_name --resource-group $resource_group --query publicIps -o tsv)
-# echo "The VM IP address is: $vm_ip"
+vm_ip=$(az vm show --show-details --name $vm_name --resource-group $resource_group --query publicIps -o tsv)
+echo "The VM IP address is: $vm_ip"
